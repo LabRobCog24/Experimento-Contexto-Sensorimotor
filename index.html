@@ -19,9 +19,6 @@
     <link href="https://unpkg.com/jspsych@7.3.3/css/jspsych.css" rel="stylesheet" type="text/css" />
     <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
     <script type="text/javascript" src="stimuli_1.js"></script>
-    <script type="text/javascript" src="stimuli_2.js"></script>
-    <script type="text/javascript" src="stimuli_3.js"></script>
-    <script type="text/javascript" src="stimuli_4.js"></script>
     <script language="javascript"></script>  
   </head>
   <body></body>
@@ -219,15 +216,7 @@ jsPsych.data.addProperties({num_lista: LISTA});
 // Seleccionar lista de estímulos
 
 var stimuli;
-    if (LISTA == 1) {
-        stimuli = stimuli_1;
-    } else if (LISTA == 2) {
-        stimuli = stimuli_2;
-    } else if (LISTA == 3) {
-        stimuli = stimuli_3;
-    } else {
-        stimuli = stimuli_4;
-    };
+stimuli = stimuli_1;
  
 
 // Aleatorizar los estímulos del experimento
