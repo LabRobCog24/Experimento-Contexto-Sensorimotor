@@ -205,7 +205,7 @@ var area = {
 // Lista de oraciones (sentences) con su respectiva palabra (word) en distintos tipos de contextos A y B
 
 // Define the number of random conditions (4 lists of stimuli)
-var num_lista = [1,2,3,4]; 
+var num_lista = [1]; 
 
 var LISTA = jsPsych.randomization.sampleWithReplacement(num_lista, 1);
 
@@ -405,12 +405,20 @@ var pantalla_salir = {
 };
 
 // Save data
-const save_data = {
+/*const save_data = {
     type: jsPsychPipe,
     action: "save",
     experiment_id: "h77dw1EeWtUq",
     filename: `${rand_subject_id}.csv`,
     data_string: ()=>jsPsych.data.get().csv()
+};*/
+
+const save_data = {
+  type: jsPsychPipe,
+  action: "save",
+  experiment_id: "YbB2260IKcJJ",
+  filename: filename,
+  data_string: ()=>jsPsych.data.get().csv()
 };
     
     
